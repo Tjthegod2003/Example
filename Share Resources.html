@@ -1,0 +1,156 @@
+<html>  
+    <head>
+        <link rel="icon"  href="favicon.ico" type="image/x-icon">
+            <div class="navbar"  id="Logo">
+                <img src="CTUmainlogo.png" alt="CTU Logo" width="110">
+
+                <!-- Use button elements instead of anchor elements -->
+                <button class="navbar-btn"><a href="index.html" style="text-decoration: none;color: #fff;">Home</a></button>
+                <button class="navbar-btn" href="TimeTable.html"><a href="TimeTable.html" style="text-decoration: none;color: #fff;">Timetable</a></button>
+                <button class="navbar-btn" href="Discussion.html"><a href="Discussion.html" style="text-decoration: none;color: #fff;">Discussion</a></button>
+                <button class="navbar-btn"><b><i>Shared Resources</i></b></button>
+                <button class="navbar-btn" href="AboutUs.html"><a href="AboutUs.html" style="text-decoration: none;color: #fff;">About Us</a></button>
+                <button class="navbar-btn" href="ContactUs.html"><a href="ContactUs.html" style="text-decoration: none;color: #fff;">Contact Us</a></button>
+
+            </div>
+
+        <link rel="stylesheet" href="CSS/Share ResourcesCSS.css">
+        <link rel="stylesheet" href="CSS/Share Resources NavbarCSS.css">
+        <link href="index.html">
+        <link href="TimeTable.html">
+        <link href="Discussion.html">
+        <link href="Share Resources.html">
+        <link href="AboutUs.html">
+        <link href="ContactUs.html">
+        
+        <title>
+            CTU-Buddy-Resources
+        </title>
+
+    </head>
+<body>
+    <main>
+        <!-- Available Resources Part -->
+        <section id="resources-section">
+            <h2>Available Resources</h2>
+            <input type="text" id="searchInput" placeholder="Search files...">
+
+            <table id="fileTable">
+                <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody id="fileTableBody">
+                    <!-- Files will be added here dynamically -->
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- Upload Resources Part -->
+        <section id="upload-section">
+            <h2>Upload a Resource</h2>
+            <input type="file" id="fileInput" accept=".pdf">
+            <button id="uploadButton">Upload</button>
+        </section>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const fileTable = document.getElementById('fileTable');
+    const tbody = document.getElementById('fileTableBody'); // Updated ID
+    const fileInput = document.getElementById('fileInput');
+    const uploadButton = document.getElementById('uploadButton');
+    const searchInput = document.getElementById('searchInput'); // Added search input
+
+    let uploadedFiles = []; // Store the list of uploaded files
+
+    // Initialize the list of uploaded files
+    initializeResourceList();
+
+        uploadButton.addEventListener('click', () => {
+        const file = fileInput.files[0];
+        if (file && file.type === 'application/pdf') {
+            const formData = new FormData();
+            formData.append('pdfFile', file);
+
+            fetch('upload.php', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => {
+                if (response.ok) {
+                    // The file was successfully uploaded
+                    // You can handle the response here (e.g., display a success message)
+                    initializeResourceList(); // Refresh the resource list
+                } else {
+                    // Handle the case where the upload was not successful
+                    alert('File upload failed.');
+                }
+            })
+            .catch(error => {
+                // Handle any errors that occur during the upload
+                console.error('Error:', error);
+            });
+        } else {
+            alert('Please upload a PDF file.');
+        }
+    });
+
+    function initializeResourceList() {
+        // Fetch the list of uploaded files from the server
+        fetch('get_files.php') // Replace with your server-side script
+            .then(response => response.json())
+            .then(data => {
+                uploadedFiles = data; // Store the list of uploaded files
+
+                // Clear the table body
+                tbody.innerHTML = '';
+
+                // Iterate through the list of files and add them to the table
+                uploadedFiles.forEach(file => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${file.name}</td>
+                        <td><a href="uploads/${file.name}" download>Download</a></td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching files:', error);
+            });
+    }
+
+    // Add an input event listener to the search input
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase();
+
+        // Filter and display matching files in the table
+        const filteredFiles = uploadedFiles.filter(file =>
+            file.name.toLowerCase().includes(query)
+        );
+
+        // Clear the table body
+        tbody.innerHTML = '';
+
+        // Iterate through the filtered files and add them to the table
+        filteredFiles.forEach(file => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${file.name}</td>
+                <td><a href="uploads/${file.name}" download>Download</a></td>
+            `;
+            tbody.appendChild(row);
+        });
+    });
+});
+
+
+    </script>
+</body>
+</html>
+
+</html>

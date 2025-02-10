@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <link href="index.html">
+    <link href="TimeTable.html">
+    <link href="Discussion.html">
+    <link href="Share Resources.html">
+    <link href="AboutUs.html">
+    <link href="ContactUs.html">
+    <link rel="icon"  href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="DiscussionCSS.css">
+
+    
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discussion Page</title>
+    
+            <div class="navbar"  id="Logo">
+                <img src="CTUmainlogo.png" alt="CTU Logo" width="110">
+
+
+            <!-- Use button elements instead of anchor elements -->
+            <button class="navbar-btn"><a href="index.html" style="text-decoration: none;color: #fff;">Home</a></button>
+            <button class="navbar-btn" href="TimeTable.html"><a href="TimeTable.html" style="text-decoration: none;color: #fff;">Timetable</a></button>
+            <button class="navbar-btn"><b><i>Discussion</i></b></button>
+            <button class="navbar-btn" href="Share Resources.html"><a href="Share Resources.html" style="text-decoration: none;color: #fff;">Shared Resources</a></i></b></button>
+            <button class="navbar-btn" href="AboutUs.html"><a href="AboutUs.html" style="text-decoration: none;color: #fff;">About Us</a></button>
+            <button class="navbar-btn" href="ContactUs.html"><a href="ContactUs.html" style="text-decoration: none;color: #fff;">Contact Us</a></button>
+
+        </div>
+        <script src="Discussion.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Welcome to the Discussion Page</h1>
+
+    <p> At CTU we pride ourselves on the communities that our learners become a part of.
+
+        We believe in learning by doing so we encourage you to participate in discussions about their work,
+
+        projects or anything else related to computer science. You can also ask us any questions regarding
+
+        your course and you attendance at your selected campus.
+
+    </p>
+
+ 
+
+    <!-- Form to post a new question -->
+
+    <form id="questionForm">
+
+        <label for="questionInput">Post your question:</label>
+
+        <br>
+
+        <textarea id="questionInput" rows="4" cols="50" required></textarea>
+
+        <br>
+
+        <button type="submit">Submit Question</button>
+
+    </form>
+
+   
+
+    <!-- Container to display questions and comments -->
+
+    <div id="discussionContainer">
+
+        <!-- Example question and comments -->
+
+      
+
+        <div class="discussionItem">
+
+            <p class="question" style="color: black;">Question: How does this work?</p>
+
+            <table class="commentsTable">
+
+                <tr class="commentRow">
+
+                    <td class="comment" style="color: black;">It works like this...</td>
+
+                </tr>
+
+                <tr class="commentRow">
+
+                    <td class="comment" style="color: black;">Thanks for the question!</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+ 

@@ -1,0 +1,83 @@
+.header{
+    padding: 80px;
+    text-align: center;
+    background-image: url(student-849822_1280.jpg);
+    color: darkslategray;
+}
+
+.navbar {
+    display:flex;
+    text-align: center;
+    background-color: darkslategrey;
+    color: #fff;
+    padding: 10px 0;
+
+}
+
+
+.navbar-btn {
+    margin: 0 10px;
+    color: #fff;
+    background-color: darkslategrey; 
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 8px 16px; 
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 0;
+    transition: all 280ms ease-in-out;
+    text-transform: uppercase;
+    
+}
+
+.navbar-btn:hover {
+    letter-spacing: 5px;
+}
+
+.navbar-btn::after,
+.navbar-btn::before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: -6px; 
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.navbar-btn:hover::after,
+.navbar-btn:hover::before {
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+    max-width: 70%;
+}
+
+.navbar-btn:hover::before {
+    bottom: -12px; 
+    top: -6px;  
+    max-width: 70%;
+}
+
+
+.navbar-btn.rounded {
+    border-radius: 20px;
+}
+
+.navbar-btn.rounded .text-green {
+    color: #00F0B5;
+    mix-blend-mode: difference;
+}
+
+.navbar-btn.rounded::after {
+    border-radius: 50px;
+    width: 25%;
+    background: #00F0B5;
+}
+
+.navbar-btn.rounded:hover::after {
+    background: #00F0B5;
+    width: 100%;}

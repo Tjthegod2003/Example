@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-SA">
+  <head>    
+    <link rel="stylesheet" href="TimeTableCSS.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="index.html">
+    <link href="TimeTable.html">
+    <link href="Discussion.html">
+    <link href="Share Resources.html">
+    <link href="AboutUs.html">
+    <link href="ContactUs.html">
+    <link rel="icon"  href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Timetable</title>
+  </head>
+
+  <body>
+    <div class="mainContainer" id="blur">
+    <!-- For the navigation bar -->
+    <div1 class="navbar" id="Logo">
+      <img src="CTUmainlogo.png" alt="CTU Logo" width="110">
+
+      <button class="navbar-btn" ><a href="index.html" style="text-decoration: none;color: #fff;">Home</a></button>
+        
+      <button class="navbar-btn"><a href="TimeTable.html" style="text-decoration: none;color: #fff;"><b><i>Timetable</i></b> </a></button>
+
+      <button class="navbar-btn"><a href="Discussion.html" style="text-decoration: none;color: #fff;">Discussion</a></button>
+
+      <button class="navbar-btn"><a href="Share Resources.html" style="text-decoration: none;color: #fff;">Shared Resources</a></button>
+
+      <button class="navbar-btn"><a href="AboutUs.html" style="text-decoration: none;color: #fff;">About Us</a></button>
+
+      <button class="navbar-btn"><a href="ContactUs.html" style="text-decoration: none;color: #fff;">Contact Us</a></button>
+    </div1>
+
+    <!-- The first parallax -->
+    <div class="parallax">
+      <h1 >Your Timetable Student of 2023 </h1>
+    </div>
+
+    <!-- Creation of the table -->
+    <table class="Hi">
+
+      <h2>Programming Foundation</h2>
+      <caption>
+        <p id="demo"></p>
+
+        <!-- script for the current time -->
+        <script>
+          const d = new Date();
+          document.getElementById("demo").innerHTML = d;
+        </script>
+      </caption>
+
+      <div id="TableDiv">
+
+        <tr>
+          <th>Time:</th>
+          <th>Subjects:</th>
+          <th>Monday:</th>
+          <th>Tuesday:</th>
+          <th>Wendsday:</th>
+          <th>Thursday:</th>
+          <th>Friday:</th>
+        </tr>
+
+        <tr>
+          <td style="color: black;background-color: grey;">08:00-09:00</td>
+          <td style="color:black; background-color:darkcyan;">Module</td>
+          <td style="color: white; background-color: blue;">RD412 <br>Theory</td>
+          <td style="color: white; background-color: blue;">RD412 <br>Pratical</td>
+          <td style="color:black; background-color: limegreen;">ENA412 <br>Theory</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br>Pratical</td>
+          <td style="color: purple;background-color: orangered;">Group Activity</td>
+
+        </tr>
+
+        <tr>
+          <td style="color: black;background-color: grey;">09:00-10:00</td>
+          <td style="color: black; background-color:darkcyan;">Module</td>
+          <td style="color: white; background-color: blue;">RD412 <br>Theory</td>
+          <td style="color: white; background-color: blue;">RD412 <br>Pratical</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br>Theory</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br>Pratical</td>
+          <td style="color:white ;background-color:crimson;">CF412 <br>Theory</td>
+        </tr>
+
+        <tr>
+          <td style="color: black;background-color: grey;">10:00-11:00 </td>
+          <td style="color: black; background-color:darkcyan;">Module</td>
+          <td style="color: white; background-color: blue;">RD412 <br>Theory</td>
+          <td style="color: white; background-color: blue;">RD412 <br>Pratical</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br>Theory</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br>Pratical</td>
+          <td style="color:white ;background-color:crimson;">CF412 <br>Pratical</td>
+        </tr>
+
+        <tr>
+          <td style="color: black;background-color: grey;">11:00-12:00</td>
+          <td style="color: black; background-color:darkcyan;">Module</td>
+          <td style="color: purple;background-color: orangered;">Group Activity</td>
+          <td style="color: purple;background-color: orangered;">Group Activity</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br>Theory</td>
+          <td style="color: purple;background-color: orangered;">Group Activity</td>
+          <td style="color:white ;background-color:crimson;">CF412 <br>Pratical</td>
+        </tr>
+
+        <tr style="background-color: grey;">     
+          <td style="color: black;">12:00-13:00</td>
+          <td style="color: black; background-color:darkcyan;">Module</td>
+          <td style="color: gold;">Break Time  </td>
+          <td style="color: gold;">Break <br>Time</td>
+          <td style="color: gold;">Break <br>Time</td>
+          <td style="color: gold;">Break <br>Time</td>
+          <td style="color: gold;">Break <br>Time</td>
+        </tr>
+
+        <tr>
+          <td style="color: black;background-color: grey;">13:00-14:00</td>
+          <td style="color: black; background-color:darkcyan;">Module</td>
+          <td style="color: darkgreen;background-color: aqua;">CW412 <br>Theory</td>
+          <td style="color: black;background-color:deeppink;">ITS</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br>Pratical</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br> Pratical</td>
+          <td style="color:darkblue;background-color: hotpink;" >Research</td>
+        </tr>
+
+        <tr>
+          <td style="color: black;background-color: grey;">14:00-15:00</td>
+          <td style="color: black; background-color:darkcyan;">Module</td>
+          <td style="color: darkgreen;background-color: aqua;">CW412 <br>Pratical</td>
+          <td style="color: black;background-color:deeppink;">ITS</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br>Pratical</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br> Pratical</td>
+          <td style="color:darkblue;background-color: hotpink;">Research</td>
+        </tr>
+
+        <tr>
+          <td style="color: black;background-color: grey;">14:00-15:00</td>
+          <td style="color: black; background-color:darkcyan;">Module</td>
+          <td style="color: darkgreen;background-color: aqua;">CW412 <br>Pratical</td>
+          <td style="color: black;background-color:deeppink;">ITS</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br>Pratical</td>
+          <td style="color:black; background-color: limegreen">ENA412 <br> Pratical</td>
+          <td style="color:darkblue;background-color: hotpink;">Research</td>
+        </tr>
+
+      </div>
+       
+    </table>
+
+      <!-- Second parallax -->
+      <div class="parallax2" >
+
+        <h3>Scroll down to use your to do list <h3>
+
+      </div>
+
+      <!-- The to do list -->
+      <div id="myDIV" class="header">
+        <h4>To Do List</h4>
+        <input type="text" id="myInput" placeholder="Description.....">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        <li>Make sure my bag is packed for tomorrow</li>
+        <li class="checked">Set alarm for tomorrow</li>
+        <li>Attend group activities</li>
+        <li>Check Timetable</li>
+      </ul>
+
+      <!-- The script for the to do list -->
+      <script>
+        /* creates a close buttn and adds items to the list */
+        var myNodelist = document.getElementsByTagName("LI");
+        var i;
+        for (i = 0; i < myNodelist.length; i++) {
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          myNodelist[i].appendChild(span);
+        }
+
+        // Allows to hide the list
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+          }
+        }
+
+        // Adds a check 
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+          if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+          }
+        }, false);
+
+        // creates a new sentence to be displayed
+        function newElement() {
+          var li = document.createElement("li");
+          var inputValue = document.getElementById("myInput").value;
+          var t = document.createTextNode(inputValue);
+          li.appendChild(t);
+          if (inputValue === '') {
+            alert("You must write something!");
+          } else {
+            document.getElementById("myUL").appendChild(li);
+          }
+          document.getElementById("myInput").value = "";
+
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          li.appendChild(span);
+
+          for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+              var div = this.parentElement;
+              div.style.display = "none";
+            }
+          }
+        }
+      </script>
+
+      <!-- Third parallax -->
+      <div class="parallax3">
+        <h5>"It always seems impossible until it's done."<br>Nelson Mandela </h5>
+      </div>
+
+      <div>
+        <a href="#" onclick="select()" id="Info">Click me to read more about the time table</a>
+      
+      </div>
+    </div>
+
+    <div id="popup">
+      <h2>Your Time Table</h2>
+      <p>The time table one of the key tools to any students succes.
+          With many features designed to enhance any students planing and organization. </p>
+      <p>One of the highlight features is the vibrent colour scheme, selected to help conduct your activities around your moduels.
+          Not only dose these colours make your timetable visually appealing it also helps in identifying moduels easly. </p> 
+      <p>Just above the time table situated is a real time-clock providing you with the time to ensure you are keeping on track with your goals on time.</p>
+      <p>Rember "Rome wasnt built in a day", alomst the same as your journey to succes , which is a slow process and that is why the timetable is here to guide you.</p>    
+      <a href="#" onclick="select()" id="Info">Close</a>
+
+    </div>
+    
+<script type="text/javascript">
+  function select(){
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active');
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('active');  
+    
+    }
+</script>
+</div>
+  </body>
+
+  <footer>  
+    <div class="social">
+      <h3>Get In Touch with us on social media</h3>
+      <ul class="contact">
+        <li><a href="#"><i class="fab fa-instagram"></i>  CTU_BuddyBoksburg</a></li>
+        <li><a href="#"><i class="fab fa-facebook"></i>  CTU_BuddyBoksburg</a></li>   
+        <li><a href="#"><i class="fab fa-youtube"></i>  CTU_BuddyBoksburg</a></li> 
+      </ul>
+      
+    </div>
+    <div>
+    <p id="copy">CTU-Buddy &copy; 2023. All rights reserved. Developed by Programmers</p>
+    <div>
+  </footer>
+</html>

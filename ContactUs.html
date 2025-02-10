@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Group Project Timetable  </title>
+    <link rel="stylesheet" href="ContactUsCSS.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link href="index.html">
+     <link href="TimeTable.html">
+     <link href="Discussion.html">
+     <link href="Share Resources.html">
+     <link href="AboutUs.html">
+     <link href="ContactUs.html">
+
+   </head>
+<body>
+  <div class="navbar"  id="Logo">
+    <img src="CTUmainlogo.png" alt="CTU Logo" width="110">
+        
+          <button class="navbar-btn" ><a href="index.html" style="text-decoration: none;color: #fff;">Home</a></button>
+          
+          <button class="navbar-btn"><a href="TimeTable.html" style="text-decoration: none;color: #fff;">Timetable </a></button>
+  
+          <button class="navbar-btn"><a href="Discussion.html" style="text-decoration: none;color: #fff;">Discussion</a></button>
+  
+          <button class="navbar-btn"><a href="Share Resources.html" style="text-decoration: none;color: #fff;">Shared Resources</a></button>
+  
+          <button class="navbar-btn"><a href="AboutUs.html" style="text-decoration: none;color: #fff;">About Us</a></button>
+  
+          <button class="navbar-btn"><a href="ContactUs.html" style="text-decoration: none;color: #fff;"><b><i>Contact Us</b></i></a></button>
+      
+    </div>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address:</div>
+          <div class="text-one">36 Edgar road, Boksburg</div>
+          <div class="text-two">Johannesburg, Gauteng</div>
+        </div>
+        
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone:</div>
+          <div class="text-one">011-675-1284</div>
+          <div class="text-two">072-983-5362</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email:</div>
+          <div class="text-one">info.ctucareer.co.za</div>
+          
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Contact us</div>
+        <p>We would love to get some feedback from you. Below you can enter your name and email address and we will be sure to get back to you. We would also love to get some suggestions on how we can better our services.</p>
+  
+    <form action="contact_form.php" method="POST">
+        <div class="input-box">
+            <input type="text" placeholder="Enter your name" name="name">
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Enter your email" name="email">
+        </div>
+        <div class="input-box message-box">
+            <input type="text" placeholder="Suggestions" name="suggestions">
+        </div>
+        <div class="button">
+            <input type="submit" value="Send Now">
+        </div>
+    </form>
+
+      <div class="map-container">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.3713681353547!2d28.249411375414525!3d-26.18459507708869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9516f7cdf0e7e1%3A0xb6052309e286935a!2sCTU%20Training%20Solutions%20Boksburg!5e0!3m2!1sen!2sza!4v1691348529742!5m2!1sen!2sza"></iframe>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="school-img">
+    <img src="IMG\Campus.png" alt="">
+  </div>
+<!--   <div class="phase2">
+    <div class="topic-text">Name & Surname: Tumelo Molelwa</div>
+    <div class="topic-text">Name of Group: Programmers 2023</div>
+    <div class="topic-text">Student number: 20231415</div>
+</div> -->
+ 
+<section class="contact-form">
+  <h2>Subscribe to Our Newsletter</h2>
+  <p>Stay updated with our latest news and events.</p>
+  <form action="process_subscription.php" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">Subscribe</button>
+  </form>
+</section>
+  <div class="social">
+    <h3>Get In Touch with us on social media</h3>
+    <ul class="contact">
+      <li><a href="#"><i class="fab fa-instagram"></i>  CTU_BuddyBoksburg</a></li>
+      <li><a href="#"><i class="fab fa-facebook"></i>  CTU_BuddyBoksburg</a></li>   
+      <li><a href="#"><i class="fab fa-youtube"></i>  CTU_BuddyBoksburg</a></li> 
+    </ul>
+  </div>
+</body>
+<footer class="footer">
+  <p>CTU-Buddy &copy; 2023. All rights reserved.</p>
+</footer>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-SA">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="HomeCSS.css">
+        <link href="Home.html">
+        <link href="TimeTable.html">
+        <link href="Discussion.html">
+        <link href="Share Resources.html">
+        <link href="AboutUs.html">
+        <link href="ContactUs.html">
+        <link rel="icon"  href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Home</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <H1>    CTU     <br>    Buddy   </H1>
+        </div>
+
+
+        <!-- For the navigation bar -->
+
+        <div1 class="navbar"  id="Logo">
+            <img src="CTUmainlogo.png" alt="CTU Logo" width="110">
+            
+            <button class="navbar-btn" ><a href="Home.html"></a><b><i>Home</i></b></button>
+            
+            <button class="navbar-btn"><a href="TimeTable.html" style="text-decoration: none;color: #fff;">Timetable </a></button>
+
+            <button class="navbar-btn"><a href="Discussion.html" style="text-decoration: none;color: #fff;">Discussion</a></button>
+
+            <button class="navbar-btn"><a href="Share Resources.html" style="text-decoration: none;color: #fff;">Shared Resources</a></button>
+
+            <button class="navbar-btn"><a href="AboutUs.html" style="text-decoration: none;color: #fff;">About Us</a></button>
+
+            <button class="navbar-btn"><a href="ContactUs.html" style="text-decoration: none;color: #fff;">Contact Us</a></button>
+        </div1>
+
+
+        <div class="colums">
+            <div class="Left">
+                <h2>What is CTU-Buddy?</h2>
+                <p>
+                    Well thats a simple answer its the all new comprehensive and interactive website that enhances 
+                    the learning experience for students. 
+                </p> 
+                <p>
+                    CTU-Buddy has five different pages designed in helping
+                    students have a better educational experience  
+                </p>
+                <h2>How is CTU-Buddy benefical?</h2>
+                <p>
+                    CTU-Buddy is coded by and for students to help from an inside perspective of everyday problems that students experience.The website was made to keep track of yor upcoming
+                    assigments,keep a digital copy of your timetable for quicker acess during class time to prevent loss of time during your 
+                    college grind aswell as keep a list of thigs that you should have completed 
+                    in the near future with your own perzonilazed to do list.The website also enables learners to disccuse 
+                    thier work with thier fellow peers and lectures to encourage more learning stability and productivity
+                </p>
+
+            </div>
+            <div class="slideshow-container" >
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="HeritageDay.jpg" style="width:100%">
+                  <div class="text">Heritage Day</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="CtuSRCSpur.jpg" style="width:100%">
+                  <div class="text">SRC Spur Day</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="SRC2.png.jpg" style="width:100%">
+                    <div class="text">SRC Spur Day</div>
+                  </div>
+            
+                  <div class="mySlides fade">
+                    <div class="numbertext">4 / 3</div>
+                    <img src="SRC3.png.jpg" style="width:100%">
+                    <div class="text">SRC Spur Day</div>
+                  </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 3</div>
+                  <img src="Mr.MsPrep.png.jpg" style="width:100%">
+                  <div class="text">Mr and Ms CTU</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 3</div>
+                    <img src="MsCtu.png.jpg" style="width:100%">
+                    <div class="text">Mr and Ms CTU</div>
+                  </div>
+            
+                  <div class="mySlides fade">
+                    <div class="numbertext">7 / 3</div>
+                    <img src="MsCtu2.png.jpg" style="width:100%">
+                    <div class="text">Mr and Ms CTU</div>
+                  </div>
+            
+                  <div class="mySlides fade">
+                    <div class="numbertext">8 / 3</div>
+                    <img src="NinjaMrCtu.png.jpg" style="width:100%">
+                    <div class="text">Mr and Ms CTU</div>
+                  </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+              </div>
+            <script>
+                let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+            </script>
+        </div>
+
+    </body>
+    <footer>
+        <a href="Home.html" style="color: #fff;">Home</a><br>
+        <a href="TimeTable.html" style="color: #fff;">Time Table</a><br>
+        <a href="Discussion.html" style="color: #fff;"> Discussion</a><br>
+        <a href="Share Resources.html" style="color: #fff;" > Shared Resources</a><br>
+        <a href="AboutUs.html" style="color: #fff;">About Us</a><br>
+        <a href="ContactUs.html" style="color: #fff;">Conatact Us</a><br>
+    
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </footer>
+
+</html>

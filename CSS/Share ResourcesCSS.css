@@ -1,0 +1,94 @@
+
+html {
+    min-width: 300px;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdcdcd;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 50rem;
+}
+
+.tab {
+    width: 20px;
+}
+
+
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: blue;
+}
+
+/* #searchInput {
+    display: block;
+} */
+
+#upload-section {
+    border-bottom: 3px solid #ccc;
+    background-color: #00000020;
+    padding-bottom: 1rem;
+    border-color:blue;
+    border-radius: 2px;
+    border-style: double;
+    text-align: center;
+
+}
+
+#resources-section {
+    margin-top: 2rem;
+    background-color: #00000020;
+    border-color:blue;
+    border-radius: 2px;
+    border-style: double;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #7d96ad;
+    text-align: center;
+    padding: 1rem 0;
+    max-width: 100%;
+}
+
+img{
+    display: block;
+    width: 3rem;
+}
+
+#Logo img {
+    text-align: left;
+    margin-right: 200px;
+    margin-left: 40px;
+    width: 110px;
+}
